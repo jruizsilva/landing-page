@@ -1,0 +1,271 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+#header {
+	display: none;
+	position: fixed;
+	top: 0;
+}
+.wrap-header {
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 400px;
+}
+@media screen and (min-width: 750px) {
+	.wrap-header {
+		padding: 24px 48px;
+	}
+}
+.header {
+	background-image: url(img/fondo-header.jpg);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.text-container {
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: auto auto;
+	grid-gap: 8px;
+}
+@media screen and (min-width: 750px) {
+	.text-container {
+		grid-template-columns: 320px 1fr;
+	}
+}
+.title,
+.subtitle {
+	margin: 0;
+}
+.title {
+	font-size: 34px;
+	font-weight: 400;
+	grid-column: span 2;
+	width: auto;
+}
+@media screen and (min-width: 750px) {
+	.title {
+		font-size: 42px;
+		width: 480px;
+	}
+}
+.subtitle {
+	font-size: 24px;
+	font-weight: 300;
+}
+@media screen and (min-width: 750px) {
+	.subtitle {
+		font-size: 28px;
+	}
+}
+/* Form */
+.form {
+	padding-bottom: 60px;
+}
+@media screen and (min-width: 750px) {
+	.form {
+		width: 450px;
+	}
+}
+.form__label {
+	display: block;
+	font-weight: 300;
+	font-size: 21px;
+}
+@media screen and (min-width: 750px) {
+	.form__label {
+		font-size: 24px;
+	}
+}
+.field {
+	border: 1px solid #c4c4c4;
+	border-radius: 8px;
+	margin: 4px 0;
+}
+.form__input {
+	border-radius: 8px;
+	outline: none;
+	border: none;
+	height: 48px;
+	padding: 16px;
+	padding-left: 12px;
+	font-size: 20px;
+	color: #444;
+	width: 100%;
+}
+@media screen and (min-width: 750px) {
+	.form__input {
+		font-size: 22px;
+	}
+}
+.container-submit {
+	display: flex;
+	justify-content: flex-end;
+	height: 48px;
+	margin-top: 16px;
+}
+.submit {
+	border-radius: 8px;
+	color: #2f2f2f;
+	outline: none;
+	border: none;
+	width: 125px;
+	text-align: center;
+	font-size: 18px;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+}
+.submit:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+}
+.video-fondo {
+	max-width: 100%;
+}
+.logo {
+	width: 100px;
+	height: auto;
+}
+.main-nav {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 64px;
+	z-index: 10;
+}
+.wrap-nav {
+	height: 100%;
+	padding: 0 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@media screen and (min-width: 750px) {
+	.wrap-nav {
+		padding: 16px 48px;
+	}
+}
+.nav {
+	position: absolute;
+	top: 64px;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	transform: translateX(-100vw);
+	transition: all 300ms;
+	margin: 0 auto;
+}
+.nav__ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	padding-bottom: 14px;
+	padding-right: 16px;
+}
+@media screen and (min-width: 750px) {
+	.nav__ul {
+		padding-right: 48px;
+	}
+}
+.nav__item {
+	padding: 16px 0;
+}
+@media screen and (min-width: 750px) {
+	.nav__item {
+		border: none;
+	}
+}
+.nav__link {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+.nav__link:hover {
+	text-decoration: underline;
+}
+.container-icon-menu__input {
+	display: none;
+}
+.container-icon-menu__input:checked ~ .nav {
+	transform: translateX(0);
+}
+.container-icon-menu__icon {
+	color: white;
+	width: 32px;
+}
+.container-icon-menu__icon:hover {
+	cursor: pointer;
+}
+
+.main {
+	position: relative;
+	top: -64px;
+}
+.section {
+	margin-top: -64px;
+	padding: 0 16px;
+}
+@media screen and (min-width: 750px) {
+	.section {
+		padding: 0 48px;
+	}
+}
+.wrap-section {
+	max-width: 750px;
+	margin: 0 auto;
+}
+.section__h3 {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 400;
+}
+@media screen and (min-width: 750px) {
+	.section__h3 {
+		font-size: 38px;
+	}
+}
+.section__p {
+	line-height: 1.5;
+	font-size: 18px;
+}
+.footer {
+	background-color: #4a4a4a;
+	padding: 24px 16px;
+	font-size: 16px;
+	margin-top: 48px;
+}
+.footer__ul {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+.footer__link {
+	color: white;
+	text-decoration: none;
+}
+.footer__item {
+	margin-bottom: 16px;
+}
+.footer__item:last-child {
+	margin-bottom: 0;
+}
+.footer__link:last-child {
+	margin-bottom: 0;
+}
+.footer__link:hover {
+	text-decoration: underline;
+}

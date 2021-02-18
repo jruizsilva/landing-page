@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Landing Page</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div id="header">
+			<img src="img/logo.svg" alt="Logotipo" id="header-img" />
+
+			<input type="checkbox" id="icon-menu" />
+			<label for="icon-menu">
+				<img src="img/white-menu.svg" />
+			</label>
+			<nav id="nav-bar">
+				<ul>
+					<li>
+						<a href="#video" class="nav-link">Inicio</a>
+					</li>
+					<li>
+						<a href="#form" class="nav-link">Ayuda</a>
+					</li>
+					<li>
+						<a href="#footer" class="nav-link">Iniciar Sesion</a>
+					</li>
+					<li>
+						<a href="#footer" class="nav-link">Registrarse</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<header class="header">
+			<div class="wrap-header">
+				<div class="text-container">
+					<h1 class="title">Encuentra confort donde sea que vayas</h1>
+					<h2 class="subtitle">
+						Convierte en anfrition y gana sueldo mensual hospedando con nosotros
+					</h2>
+				</div>
+
+				<section>
+					<form
+						action="https://www.freecodecamp.com/email-submit"
+						id="form"
+						class="form"
+					>
+						<label for="email" class="form__label"
+							>Añada su correo para empezar</label
+						>
+						<div class="field">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Introduzca el correo electronico"
+								class="form__input"
+							/>
+						</div>
+
+						<div class="container-submit">
+							<input type="submit" value="Enviar" id="submit" class="submit" />
+						</div>
+					</form>
+				</section>
+			</div>
+		</header>
+		<div class="main-nav">
+			<div class="wrap-nav">
+				<div class="container-logo">
+					<img
+						src="img/logo.svg"
+						alt="Logotipo"
+						height="80px"
+						id="header-img"
+						class="logo"
+					/>
+				</div>
+				<div class="container-icon-menu">
+					<input
+						type="checkbox"
+						id="icon-menu2"
+						class="container-icon-menu__input"
+					/>
+					<label for="icon-menu2" class="container-icon-menu__label">
+						<img
+							src="img/white-menu.svg"
+							alt=""
+							class="container-icon-menu__icon"
+						/>
+					</label>
+					<nav class="nav">
+						<ul class="nav__ul">
+							<li class="nav__item">
+								<a href="#video" class="nav__link nav-link">Inicio</a>
+							</li>
+							<li class="nav__item">
+								<a href="#form" class="nav__link nav-link">Ayuda</a>
+							</li>
+							<li class="nav__item">
+								<a href="#footer" class="nav__link nav-link">Iniciar Sesion</a>
+							</li>
+							<li class="nav__item">
+								<a href="#footer" class="nav__link nav-link">Registrarse</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<main class="main">
+			<video
+				src="video/video.mp4"
+				muted
+				loop
+				id="video"
+				class="video-fondo"
+			></video>
+		</main>
+		<section class="section">
+			<div class="wrap-section">
+				<h3 class="section__h3">Únete a miles de anfitriones</h3>
+				<p class="section__p">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+					recusandae? Quia, suscipit quo? Qui, tenetur perspiciatis? Reiciendis
+					est, laudantium accusamus at quas explicabo ratione consectetur alias
+					aut incidunt, ipsa iure!
+				</p>
+				<p class="section__p">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+					recusandae? Quia, suscipit quo? Qui, tenetur perspiciatis? Reiciendis
+					est, laudantium accusamus at quas explicabo ratione consectetur alias
+					aut incidunt, ipsa iure!
+				</p>
+				<p class="section__p">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+					recusandae? Quia, suscipit quo? Qui, tenetur perspiciatis? Reiciendis
+					est, laudantium accusamus at quas explicabo ratione consectetur alias
+					aut incidunt, ipsa iure!
+				</p>
+			</div>
+		</section>
+		<footer id="footer" class="footer">
+			<div class="wrap-footer">
+				<ul class="footer__ul">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Centro de ayuda</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">¿Como funciona?</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Invita a tus amigos</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+	</body>
+</html>
