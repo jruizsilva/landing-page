@@ -2,7 +2,7 @@
 
 ## Responsive Web Design Project #3
 
-Este es el tercer projecto del curso Responsive Web Design propuesto por freeCodeCamp es un plan de estudios
+Este es el tercer projecto del curso Responsive Web Design propuesto por freeCodeCamp es un plan de estudios.
 
 Las tecnologias utilizadas fueron:
 
